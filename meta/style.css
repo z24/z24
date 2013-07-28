@@ -1,0 +1,57 @@
+body 
+{
+    background-image:url('chip.png'); 
+    margin:24px;
+    position:relative;
+}
+
+div#photo
+{
+    position:absolute;
+    z-index:-1;
+    bottom:0;
+    right:0;
+    height:300px;
+    width:200px;
+    background-image:url('porco.jpg');
+    background-size:100%;
+    background-repeat:no-repeat;
+    opacity:0.3;
+}
+
+p.date
+{
+    text-align:right;
+}
+
+a:link
+{
+    color:blue;
+    text-decoration:none;
+}
+a:visited
+{
+    color:blue;
+    text-decoration:none;
+}
+a.di
+{
+    font-weight:bold;
+}
+a.ln
+{
+    color:teal;
+    font-weight:bold;
+}
+a.di:after
+{
+    content:"/";
+    color:black;
+    font-family:Courier;
+}
+a.ln:after
+{
+    content:"@";
+    color:black;
+    font-family:Courier;
+}
