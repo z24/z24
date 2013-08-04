@@ -1,11 +1,15 @@
-body 
+body
 {
-    background-image:url('chip.png'); 
-    margin:24px;
+    background-image:url('chip.png');
+}
+div#body
+{
+    width:1024px;
+    margin:0px auto;
     position:relative;
 }
 
-div#photo
+div#porco
 {
     position:absolute;
     z-index:-1;
