@@ -9,6 +9,18 @@ div#body
     position:relative;
 }
 
+div#photo
+{
+    position:absolute;
+    z-index:-1;
+    bottom:-1;
+    right:0;
+    height:150px;
+    width:120px;
+    background-image:url('dobbslack.png');
+    background-size:100%;
+    background-repeat:no-repeat;
+}
 div#porco
 {
     position:absolute;
@@ -21,6 +33,11 @@ div#porco
     background-size:100%;
     background-repeat:no-repeat;
     opacity:0.3;
+}
+
+h2,h3
+{
+    font-variant:small-caps;
 }
 
 p.date
