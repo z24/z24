@@ -6,21 +6,6 @@
     <link rel="shortcut icon" href="meta/fav.png">
     <link rel="stylesheet" type="text/css" href="meta/style.css"/>
     <script type="text/javascript" src="meta/ga.js"></script>
-    <script type="text/javascript">
-      function parse() {
-      var k = {};
-      var v = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
-      function(str,key,value) {
-      k[key] = value;
-      });
-      return k;
-      }
-      var q = parse()["q"];
-      if (q) {
-      var url = 'http://www.cse.sc.edu/~zhou42/'+q;
-      window.location = url;
-      }
-    </script>
   </head>
   <body>
     <div id="body">
@@ -28,19 +13,24 @@
       <h2>Youjie Zhou</h2>
       <p>315 Main St., Columbia, SC 29208</p>
       <p>zhou42 (at) email (dot) sc (dot) edu</p>
-      <p>
-        <!-- <a class="di" href="#log">Log</a> -->
-        <a class="di" href="#pub">Research</a>
-        <a class="di" href="#down">Download</a>
-        <a class="ln" href="https://github.com/z24">GitHub</a>
-      </p>
       <hr>
       <p>
-        I am a Ph.D. candidate in Computer Science and Engineering, supervised by <a href="http://www.cse.sc.edu/~songwang/">Dr. Song Wang</a>, at the <a href="http://cvl.cse.sc.edu/">Computer Vision Lab</a> of <a href="http://www.cse.sc.edu/">University of South Carolina</a>. I got my B.E. degree, supervised by <a href="http://memcache.drivehq.com/">Dr. Hangzai Luo</a>, at the <a href="http://database.ecnu.edu.cn/en/">Institute of Massive Computing</a> of <a href="http://english.ecnu.edu.cn/">East China Normal University</a>.
+        I am a Ph.D. candidate in Computer Science and Engineering, supervised by <a href="http://www.cse.sc.edu/~songwang/">Dr. Song Wang</a>, at the <a href="http://cvl.cse.sc.edu/">Computer Vision Lab</a> of <a href="http://www.cse.sc.edu/">University of South Carolina</a>. I got the B.E. degree, supervised by <a href="http://memcache.drivehq.com/">Dr. Hangzai Luo</a>, at the <a href="http://database.ecnu.edu.cn/en/">Institute of Massive Computing</a> of <a href="http://english.ecnu.edu.cn/">East China Normal University</a>.
       </p>
-      <!-- <h3><a id="log">Log</a></h3> -->
       <h3><a id="pub">Research</a></h3>
       <ul>
+        <li><u>Pose Locality Constrained Representation for 3D Human Pose Reconstruction</u><br>
+          Xiaochuan Fan, Kang Zheng, <b>Youjie Zhou</b> and Song Wang<br>
+          <i>European Conference on Computer Vision (ECCV)</i>, 2014
+        </li>
+        <li><u>Edge-Weighted Centroid Voronoi Tessellation with Propagation of Consistency Constraint for 3D Grain Segmentation in Microscopic Superalloy Images</u><br>
+          <b>Youjie Zhou</b>, Lili Ju, Yu Cao,  Jarrell Waggoner, Yuewei Lin, Jeff Simmons and Song Wang<br>
+          <i>CVPR Workshop on Perception Beyond the Visible Spectrum (PBVS)</i>, 2014
+        </li>
+        <li><u>Graph-Cut Based Interactive Segmentation of 3D Materials-Science Images</u> [<a href="https://www.youtube.com/watch?v=ETQHUFm5cyM">Demo</a>]<br>
+          Jarrell Waggoner, <b>Youjie Zhou</b>, Jeff Simmons, Marc De Graef and Song Wang<br>
+          <i>Machine Vision and Applications</i>, 2014
+        </li>
         <li><u>3D Materials Image Segmentation by 2D Propagation: A Graph-Cut Approach Considering Homomorphism</u><br>
           Jarrell Waggoner, <b>Youjie Zhou</b>, Jeff Simmons, Marc De Graef and Song Wang<br>
           <i>IEEE Transactions on Image Processing (TIP)</i>, 2013
@@ -53,11 +43,11 @@
           Jarrell Waggoner, <b>Youjie Zhou</b>, Jeff Simmons, Ayman Salem, Marc De Graef and Song Wang<br>
           <i>Proceedings of SPIE (Computational Imaging XI)</i>, 2013
         </li>
-        <li><u>Geo-Location Inference on News Articles via Multimodal pLSA</u> [<a href="?q=pub/mm2012.pdf">PDF</a>]<br>
+        <li><u>Geo-Location Inference on News Articles via Multimodal pLSA</u><br>
           <b>Youjie Zhou</b> and Jiebo Luo<br>
           <i>ACM Multimedia (MM)</i>, 2012
         </li>
-        <li><u>Multimedia News Exploration and Retrieval by Integrating Keywords, Relations and Visual Features</u> [<a href="?q=pub/mta2011.pdf">PDF</a>]<br>
+        <li><u>Multimedia News Exploration and Retrieval by Integrating Keywords, Relations and Visual Features</u><br>
           Hangzai Luo, Jianping Fan and <b>Youjie Zhou</b><br>
           <i>Multimedia Tools and Applications</i>, 2011
         </li>
@@ -69,13 +59,15 @@
       <h3><a id="down">Download</a></h3>
       <ul>
         <li><a href="http://z24.github.io/tty2gif/">tty2gif: Record Your Terminal Scripts into a GIF Animation</a></li>
+        <li><a href="https://github.com/z24/LyXTmpl">LyX Templates for ACM/SIG, IEEE(CVPR/ICCV), ECCV, NIPS and AAAI</a> | <a href="https://github.com/z24/LyXTmpl/archive/master.zip">Download Latest Version</a></li>
+        <li><a href="https://github.com/z24/slackbuilds">Slackware Package Build Scripts</a></li>
         <li><a href="https://github.com/z24/zwm">zwm: Another dwm-based Window Manager</a></li>
-        <li><a href="?q=data/LyXTmpl.tar.gz">LyX Templates for ACM/SIG, IEEE(CVPR/ICCV), NIPS and AAAI</a></li>
-        <li><a href="https://github.com/z24/dotfiles">Linux Configurations</a></li>
       </ul>
       <hr>
       <div id="porco"></div>
-      <p class="date">Jul 27 2013</p>
+      <p class="date">Jul 19 2014</p>
+      <div id="gif"></div>
+      <script type="text/javascript" src="meta/pickgif.js"></script>
     </div>
   </body>
 </html>
